@@ -5,12 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Programs from "./pages/Programs";
-import Resources from "./pages/Resources";
-import Events from "./pages/Events";
-import Stories from "./pages/Stories";
-import Contact from "./pages/Contact";
-import Donate from "./pages/Donate";
+import IbomYouth2040 from "./pages/IbomYouth2040";
+import GetInTouch from "./pages/GetInTouch";
+import Engage from "./pages/Engage";
+import News from "./pages/News";
+import BusinessDirectory from "./pages/BusinessDirectory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,12 +23,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/stories" element={<Stories />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/donate" element={<Donate />} />
+          <Route path="/ibom-youth-2040" element={<IbomYouth2040 />} />
+          <Route path="/get-in-touch" element={<GetInTouch />} />
+          <Route path="/engage" element={<Engage />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/business-directory" element={<BusinessDirectory />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

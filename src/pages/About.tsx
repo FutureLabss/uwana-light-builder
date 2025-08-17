@@ -14,22 +14,39 @@ const About = () => {
                 About Uwana
               </h1>
               <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto">
-                Be the light, lead the way - empowering Akwa-Ibom youth for a brighter future
+                Shining a light on Akwa Ibom's greatest asset: its people
               </p>
             </header>
 
             <section className="mb-16">
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
-                Our Mission
+                What is Uwana?
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                Uwana is dedicated to empowering young people in Akwa-Ibom State through comprehensive 
-                skill development, mentorship programs, and innovative training initiatives. We believe 
-                that every youth has the potential to be a beacon of change in their community.
+                Uwana (a word meaning "light" or "brightness" in the local language) is a new non-governmental 
+                initiative designed to shine a light on Akwa Ibom's greatest asset: its people. The Uwana Project 
+                aims to amplify the voices of Akwa Ibom youths in all spheres of life, from a point-of-sale 
+                attendant in a rural village to an Akwa Ibomite professional in the United States.
+              </p>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
+                By capturing and sharing their stories, achievements, and aspirations, Uwana will bring much-needed 
+                visibility to their talents and challenges. This project is rooted in the belief that the voices 
+                and creativity of Akwa Ibom's youth are powerful catalysts for change when given a platform.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                Our mission is to reduce youth unemployment by fostering self-reliance, innovation, 
-                and entrepreneurship through practical training and meaningful mentorship connections.
+                Many youths in the state are hardworking, educated, and ambitious, yet have been held back by 
+                insufficient government support, high poverty and unemployment, and limited opportunities to be heard. 
+                Uwana seeks to fill this gap as a bright beacon connecting these youths to the world.
+              </p>
+            </section>
+
+            <section className="mb-16">
+              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
+                Our Mission
+              </h2>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed">
+                Uwana's mission is to raise a generation of Akwa Ibom youth who are heard, supported, and 
+                equipped to lead change, build prosperity, and shine on the global stage.
               </p>
             </section>
 
@@ -38,51 +55,12 @@ const About = () => {
                 Our Vision
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                To create a generation of empowered, self-reliant youth who serve as catalysts for 
-                positive change in Akwa-Ibom State and beyond. We envision a future where every young 
-                person has the tools, knowledge, and support needed to light their own path to success.
+                An Akwa Ibom where youth potential is fully realized, where young people are heard, supported, 
+                and equipped to contribute meaningfully to society, thereby catalyzing economic growth, cultural 
+                renaissance, and global recognition for the state.
               </p>
             </section>
 
-            <section className="mb-16">
-              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
-                Our Values
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                    Empowerment
-                  </h3>
-                  <p className="font-body text-muted-foreground">
-                    We believe in equipping youth with the tools and confidence to create their own opportunities.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                    Innovation
-                  </h3>
-                  <p className="font-body text-muted-foreground">
-                    We foster creative thinking and innovative solutions to address local and global challenges.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                    Community
-                  </h3>
-                  <p className="font-body text-muted-foreground">
-                    We strengthen communities by developing leaders who give back and support others.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                    Excellence
-                  </h3>
-                  <p className="font-body text-muted-foreground">
-                    We strive for the highest standards in all our programs and initiatives.
-                  </p>
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </main>
