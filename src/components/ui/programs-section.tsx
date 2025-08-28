@@ -1,75 +1,62 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import urbanSkillsImage from "@/assets/urban-skills.jpg";
-import urbanMentorshipImage from "@/assets/urban-mentorship.jpg";
+import skillsTrainingImage from "@/assets/skills-training.jpg";
+import mentorshipImage from "@/assets/mentorship.jpg";
 
 const programs = [
   {
-    image: urbanSkillsImage,
-    title: "Urban Skills Hub",
-    description: "Tech, entrepreneurship, and innovation training for the digital generation.",
+    image: skillsTrainingImage,
+    title: "Youth Skills Training",
+    description: "Hands-on training for self-reliance and innovation.",
     link: "/programs/skills-training"
   },
   {
-    image: urbanMentorshipImage,
-    title: "City Leaders Network",
-    description: "Connecting street-smart youth with successful urban professionals.",
+    image: mentorshipImage,
+    title: "Mentorship & Leadership",
+    description: "Connecting young people with experienced mentors.",
     link: "/programs/mentorship"
   }
 ];
 
 export const ProgramsSection = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-background via-muted/20 to-background">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Urban Programs
+        <div className="text-center mb-12">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+            Featured Programs
           </h2>
-          <div className="w-20 h-1 bg-gradient-urban mx-auto mb-6 rounded-full"></div>
-          <p className="font-body text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Street-smart training and <span className="text-accent font-semibold">real connections</span> for the next generation of Uyo leaders
+          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
+            Discover how we're empowering youth through practical training and mentorship
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {programs.map((program, index) => (
-            <Card key={index} className="group overflow-hidden border-2 border-border/50 hover:border-accent/50 transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 shadow-card hover:shadow-urban">
-              <div className="relative aspect-[16/10] overflow-hidden">
+            <Card key={index} className="overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-urban rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                  <div className="w-6 h-6 bg-white rounded-full"></div>
-                </div>
               </div>
-              <CardContent className="p-8 bg-gradient-card">
-                <h3 className="font-heading font-bold text-2xl md:text-3xl text-card-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+              <CardContent className="p-6">
+                <h3 className="font-heading font-semibold text-xl md:text-2xl text-card-foreground mb-3">
                   {program.title}
                 </h3>
-                <p className="font-body text-muted-foreground mb-6 leading-relaxed text-lg">
+                <p className="font-body text-muted-foreground mb-6 leading-relaxed">
                   {program.description}
                 </p>
                 <Button 
-                  className="bg-gradient-urban border-0 text-white font-semibold px-6 py-3 hover:shadow-neon transition-all duration-300 transform hover:scale-105"
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-body font-semibold"
                 >
-                  Get Started
+                  Learn More
                 </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
-        
-        {/* Urban Call-to-Action */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4">
-            <div className="w-12 h-0.5 bg-gradient-urban rounded-full"></div>
-            <span className="font-heading font-bold text-xl text-muted-foreground">Ready to level up?</span>
-            <div className="w-12 h-0.5 bg-gradient-urban rounded-full"></div>
-          </div>
         </div>
       </div>
     </section>
