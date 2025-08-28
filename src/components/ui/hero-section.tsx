@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
+import heroUrbanImage from "@/assets/hero-urban.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Urban Background Image */}
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${heroUrbanImage})`}}>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-accent/75 to-secondary/80"></div>
+      </div>
       {/* Urban Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-urban rounded-full blur-xl animate-pulse"></div>

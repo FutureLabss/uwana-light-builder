@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import skillsTrainingImage from "@/assets/skills-training.jpg";
-import mentorshipImage from "@/assets/mentorship.jpg";
+import urbanSkillsImage from "@/assets/urban-skills.jpg";
+import urbanMentorshipImage from "@/assets/urban-mentorship.jpg";
 
 const programs = [
   {
-    image: skillsTrainingImage,
-    title: "Youth Skills Training",
-    description: "Hands-on training for self-reliance and innovation.",
+    image: urbanSkillsImage,
+    title: "Urban Skills Hub",
+    description: "Tech, entrepreneurship, and innovation training for the digital generation.",
     link: "/programs/skills-training"
   },
   {
-    image: mentorshipImage,
-    title: "Mentorship & Leadership",
-    description: "Connecting young people with experienced mentors.",
+    image: urbanMentorshipImage,
+    title: "City Leaders Network",
+    description: "Connecting street-smart youth with successful urban professionals.",
     link: "/programs/mentorship"
   }
 ];
