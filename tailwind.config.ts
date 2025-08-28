@@ -79,7 +79,7 @@ export default {
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'golden': 'var(--shadow-golden)',
-				'card': 'var(--shadow-card)',
+				'card': '0 2px 8px hsla(120, 100%, 20%, 0.07)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

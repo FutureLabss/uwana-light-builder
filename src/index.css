@@ -8,34 +8,35 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Uwana Brand Colors */
+    /* Uwana Brand Colors - Updated Design System */
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 213 16% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 213 16% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 213 16% 13%;
 
-    /* Primary: Gold - representing light, hope, prosperity */
+    /* Primary: Gold #FFD700 */
     --primary: 51 100% 50%;
-    --primary-foreground: 0 0% 15%;
+    --primary-foreground: 213 16% 13%;
     --primary-light: 51 100% 70%;
     --primary-dark: 45 100% 35%;
 
-    /* Secondary: Dark Green - growth, stability, Nigeria */
+    /* Secondary: Dark Green #006400 */
     --secondary: 120 100% 20%;
     --secondary-foreground: 0 0% 100%;
     --secondary-light: 120 50% 30%;
 
-    /* Accent: Blue - trust, progress */
-    --accent: 212 91% 56%;
+    /* Accent: Blue #1E90FF */
+    --accent: 210 100% 56%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 212 80% 70%;
+    --accent-light: 210 80% 70%;
 
+    /* Text Secondary: #444F6E */
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 221 24% 34%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -52,7 +53,7 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
     --shadow-golden: 0 8px 32px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.05);
+    --shadow-card: 0 2px 8px hsl(120 100% 20% / 0.07);
 
     --radius: 0.5rem;
 
@@ -84,7 +85,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 95%;
 
     --primary: 51 100% 50%;
-    --primary-foreground: 0 0% 15%;
+    --primary-foreground: 213 16% 13%;
     --primary-light: 51 100% 70%;
     --primary-dark: 45 100% 35%;
 
@@ -92,12 +93,12 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 100%;
     --secondary-light: 120 50% 35%;
 
-    --accent: 212 91% 56%;
+    --accent: 210 100% 56%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 212 80% 70%;
+    --accent-light: 210 80% 70%;
 
     --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 65%;
+    --muted-foreground: 221 24% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
