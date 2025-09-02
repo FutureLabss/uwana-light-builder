@@ -68,7 +68,7 @@ const News = () => {
               News & Events
             </h1>
             <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto">
-              Stay updated with the latest developments and upcoming opportunities
+              Upcoming projects and events updated daily and weekly
             </p>
           </header>
 

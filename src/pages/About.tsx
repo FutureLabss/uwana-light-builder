@@ -20,7 +20,7 @@ const About = () => {
 
             <section className="mb-16">
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
-                What is Uwana?
+                About Uwana
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 Uwana (a word meaning "light" or "brightness" in the local language) is a new non-governmental 
@@ -42,22 +42,22 @@ const About = () => {
 
             <section className="mb-16">
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
-                Our Mission
-              </h2>
-              <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                Uwana's mission is to raise a generation of Akwa Ibom youth who are heard, supported, and 
-                equipped to lead change, build prosperity, and shine on the global stage.
-              </p>
-            </section>
-
-            <section className="mb-16">
-              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
-                Our Vision
+                The Vision
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 An Akwa Ibom where youth potential is fully realized, where young people are heard, supported, 
                 and equipped to contribute meaningfully to society, thereby catalyzing economic growth, cultural 
                 renaissance, and global recognition for the state.
+              </p>
+            </section>
+
+            <section className="mb-16">
+              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
+                The Mission
+              </h2>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed">
+                Uwana's mission is to raise a generation of Akwa Ibom youth who are heard, supported, and 
+                equipped to lead change, build prosperity, and shine on the global stage.
               </p>
             </section>
 

@@ -2,9 +2,11 @@ import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
 
 const quickLinks = [
   { text: "About", url: "/about" },
-  { text: "Programs", url: "/programs" },
-  { text: "Events", url: "/events" },
-  { text: "Donate", url: "/donate" },
+  { text: "Get In Touch", url: "/get-in-touch" },
+  { text: "Ibom Youth 2040", url: "/ibom-youth-2040" },
+  { text: "Engage", url: "/engage" },
+  { text: "News", url: "/news" },
+  { text: "Business Directory", url: "/business-directory" },
 ];
 
 const socialLinks = [
@@ -48,16 +50,16 @@ export const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
                 <a 
-                  href="mailto:info@uwanang.org"
+                  href="mailto:info@uwana.com.ng"
                   className="font-body text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
                 >
-                  info@uwanang.org
+                  info@uwana.com.ng
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
                 <span className="font-body text-secondary-foreground/80">
-                  +234XXXXXXXXXX
+                  08037890023
                 </span>
               </div>
             </div>

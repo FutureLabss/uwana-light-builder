@@ -16,7 +16,7 @@ const IbomYouth2040 = () => {
               Ibom Youth 2040
             </h1>
             <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive policy framework for youth development in Akwa Ibom State
+              Akwa Ibom Youth Prosperity Policy (AYPP)
             </p>
           </header>
 
@@ -31,9 +31,30 @@ const IbomYouth2040 = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <p className="font-body text-muted-foreground leading-relaxed">
-                    The Ibom Youth 2040 policy document outlines our strategic vision for youth development 
-                    and empowerment in Akwa Ibom State. This comprehensive framework addresses key areas 
-                    including education, employment, entrepreneurship, and civic engagement.
+                    A Policy Paper on Economic and Human Capital Development of Akwa Ibom Youths (2025–2040). 
+                    The Akwa Ibom Youth Prosperity Policy Document is a forward-looking blueprint for inclusive 
+                    economic growth and human capital development, specifically designed to harness the potential 
+                    of the state's vibrant youth population.
+                  </p>
+                  <p className="font-body text-muted-foreground leading-relaxed">
+                    With individuals under the age of 35 constituting over 62% of Akwa Ibom's 7.2 million residents 
+                    (NBS, 2023), this policy is both timely and transformative. It presents a strategic roadmap that 
+                    identifies high-impact investment opportunities across ten priority sectors: agriculture, marine 
+                    and fisheries, entrepreneurship, technology and innovation, health, education, tourism, sports, 
+                    and the creative economy.
+                  </p>
+                  <p className="font-body text-muted-foreground leading-relaxed">
+                    This is not merely a policy—it is a bold, youth-led initiative that aligns state development with 
+                    emerging global economic trends while leveraging Akwa Ibom's unique demographic advantage and sectoral 
+                    strengths. By actively positioning under-30 indigenous youth as sectoral leaders and policy actors, 
+                    the framework embraces a bottom-up, evidence-based, and investor-aligned approach to sustainable development.
+                  </p>
+                  <p className="font-body text-muted-foreground leading-relaxed">
+                    The overarching vision is to transform Akwa Ibom into Nigeria's foremost youth-powered economy by 2040, 
+                    underpinned by local ingenuity, digital transformation, and strategic public-private partnerships. To 
+                    achieve this, the policy articulates actionable strategies, presents sector-specific data, outlines 
+                    investor incentives, and proposes structural reforms necessary to build a resilient, inclusive, and 
+                    competitive sub-national economy.
                   </p>
                   <Button className="flex items-center gap-2">
                     <Download className="h-4 w-4" />
@@ -44,75 +65,18 @@ const IbomYouth2040 = () => {
             </section>
 
             <section className="mb-16">
-              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-8">
-                Key Focus Areas
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="shadow-card">
-                  <CardHeader>
-                    <CardTitle className="font-heading text-xl text-card-foreground">
-                      Education & Skills Development
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground">
-                      Bridging the gap between education and industry needs through relevant skill acquisition programs.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-card">
-                  <CardHeader>
-                    <CardTitle className="font-heading text-xl text-card-foreground">
-                      Economic Empowerment
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground">
-                      Creating sustainable economic opportunities for youth through entrepreneurship and innovation.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-card">
-                  <CardHeader>
-                    <CardTitle className="font-heading text-xl text-card-foreground">
-                      Technology Integration
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground">
-                      Leveraging digital technologies to enhance youth participation in the global economy.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="shadow-card">
-                  <CardHeader>
-                    <CardTitle className="font-heading text-xl text-card-foreground">
-                      Leadership Development
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground">
-                      Building the next generation of leaders who will drive positive change in our communities.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </section>
-
-            <section className="mb-16">
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-foreground mb-6">
                 Ndise Initiative
               </h2>
               <Card className="shadow-card">
                 <CardContent className="pt-6">
-                  <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                    Ndise, meaning "to show" in the local dialect, is our flagship initiative under the 
-                    Ibom Youth 2040 framework. This program focuses on showcasing the talents, innovations, 
-                    and achievements of Akwa Ibom youth on both local and international platforms.
+                  <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
+                    Ndise is a well-captured documentary that highlights and showcases the investment opportunities 
+                    and emerging markets in Akwa Ibom State where investors can put their money. Beyond entertainment, 
+                    the documentary is educative and informative, giving investors clarity on how and where to invest 
+                    in Akwa Ibom.
                   </p>
+                  <Button>Watch Ndise Documentary</Button>
                 </CardContent>
               </Card>
             </section>

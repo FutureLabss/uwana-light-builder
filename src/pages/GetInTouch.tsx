@@ -87,7 +87,7 @@ const GetInTouch = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground">Email</h3>
-                      <p className="font-body text-muted-foreground">info@uwanang.org</p>
+                      <p className="font-body text-muted-foreground">info@uwana.com.ng</p>
                     </div>
                   </div>
                   

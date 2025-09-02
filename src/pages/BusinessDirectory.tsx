@@ -64,7 +64,7 @@ const BusinessDirectory = () => {
               Business Directory
             </h1>
             <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover and connect with SMEs and innovation-driven businesses across Akwa Ibom
+              A platform dedicated to market, discover, and invest in SME and Akwa Ibom innovative youths
             </p>
           </header>
 

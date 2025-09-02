@@ -5,13 +5,12 @@ import { Menu } from "lucide-react";
 
 const navigationItems = [
   { label: "Home", url: "/" },
-  { label: "About Us", url: "/about" },
-  { label: "Programs", url: "/programs" },
-  { label: "Resources", url: "/resources" },
-  { label: "Events", url: "/events" },
-  { label: "Stories", url: "/stories" },
-  { label: "Contact", url: "/contact" },
-  { label: "Donate", url: "/donate" },
+  { label: "About", url: "/about" },
+  { label: "Get In Touch", url: "/get-in-touch" },
+  { label: "Ibom Youth 2040", url: "/ibom-youth-2040" },
+  { label: "Engage", url: "/engage" },
+  { label: "News", url: "/news" },
+  { label: "Business Directory", url: "/business-directory" },
 ];
 
 export const Navigation = () => {
