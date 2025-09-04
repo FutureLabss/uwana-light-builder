@@ -3,6 +3,8 @@ import { Footer } from "@/components/ui/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Lightbulb, Target, Globe } from "lucide-react";
+import engageImage from "@/assets/engage-community.jpg";
+import afehImage from "@/assets/afeh-discussion.jpg";
 
 const Engage = () => {
   return (
@@ -44,42 +46,64 @@ const Engage = () => {
             </section>
 
             <section className="mb-16">
-              <Card className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="font-heading text-2xl text-card-foreground flex items-center gap-3">
-                    <Target className="h-6 w-6 text-primary" />
-                    Akpokoro
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                    Akpokoro is an investment event that aims to promote investment and economic growth in Akwa Ibom State. 
-                    The event provides a platform for government officials, business leaders, investors, and other stakeholders 
-                    to come together and discuss opportunities for investment, showcase the state's potential sectors, and explore collaborations.
-                  </p>
-                  <Button>Learn More About Akpokoro</Button>
-                </CardContent>
-              </Card>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <img 
+                    src={engageImage} 
+                    alt="Investment forum and community engagement" 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div>
+                  <Card className="shadow-card">
+                    <CardHeader>
+                      <CardTitle className="font-heading text-2xl text-card-foreground flex items-center gap-3">
+                        <Target className="h-6 w-6 text-primary" />
+                        Akpokoro
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                      <p className="font-body text-lg text-muted-foreground leading-relaxed">
+                        Akpokoro is an investment event that aims to promote investment and economic growth in Akwa Ibom State. 
+                        The event provides a platform for government officials, business leaders, investors, and other stakeholders 
+                        to come together and discuss opportunities for investment, showcase the state's potential sectors, and explore collaborations.
+                      </p>
+                      <Button>Learn More About Akpokoro</Button>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             </section>
 
             <section className="mb-16">
-              <Card className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="font-heading text-2xl text-card-foreground flex items-center gap-3">
-                    <Globe className="h-6 w-6 text-primary" />
-                    Afeh
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                    Afeh is a platform to discuss the youth policy and the challenges facing the youths from various 
-                    communities and villages across the state. It serves as a vital forum for understanding grassroots 
-                    perspectives and ensuring that youth voices from all corners of Akwa Ibom are heard and incorporated 
-                    into policy development.
-                  </p>
-                  <Button>Join Afeh Discussion</Button>
-                </CardContent>
-              </Card>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <Card className="shadow-card">
+                    <CardHeader>
+                      <CardTitle className="font-heading text-2xl text-card-foreground flex items-center gap-3">
+                        <Globe className="h-6 w-6 text-primary" />
+                        Afeh
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                      <p className="font-body text-lg text-muted-foreground leading-relaxed">
+                        Afeh is a platform to discuss the youth policy and the challenges facing the youths from various 
+                        communities and villages across the state. It serves as a vital forum for understanding grassroots 
+                        perspectives and ensuring that youth voices from all corners of Akwa Ibom are heard and incorporated 
+                        into policy development.
+                      </p>
+                      <Button>Join Afeh Discussion</Button>
+                    </CardContent>
+                  </Card>
+                </div>
+                <div className="order-first md:order-last">
+                  <img 
+                    src={afehImage} 
+                    alt="Youth discussion forum in community setting" 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
             </section>
           </div>
         </div>
