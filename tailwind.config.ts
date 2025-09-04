@@ -75,11 +75,70 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-beacon': 'var(--gradient-beacon)',
+				'gradient-urban': 'var(--gradient-urban)',
+				'gradient-card': 'var(--gradient-card)',
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'golden': 'var(--shadow-golden)',
+				'urban': 'var(--shadow-urban)',
+				'floating': 'var(--shadow-floating)',
 				'card': '0 2px 8px hsla(120, 100%, 20%, 0.07)',
+			},
+			colors: {
+				// ... keep existing code (all current colors)
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+				primary: {
+					DEFAULT: 'hsl(var(--primary))',
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					dark: 'hsl(var(--primary-dark))'
+				},
+				secondary: {
+					DEFAULT: 'hsl(var(--secondary))',
+					foreground: 'hsl(var(--secondary-foreground))',
+					light: 'hsl(var(--secondary-light))'
+				},
+				destructive: {
+					DEFAULT: 'hsl(var(--destructive))',
+					foreground: 'hsl(var(--destructive-foreground))'
+				},
+				muted: {
+					DEFAULT: 'hsl(var(--muted))',
+					foreground: 'hsl(var(--muted-foreground))'
+				},
+				accent: {
+					DEFAULT: 'hsl(var(--accent))',
+					foreground: 'hsl(var(--accent-foreground))',
+					light: 'hsl(var(--accent-light))'
+				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
+				card: {
+					DEFAULT: 'hsl(var(--card))',
+					foreground: 'hsl(var(--card-foreground))'
+				},
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
+				},
+				'urban-gold': 'hsl(var(--urban-gold))',
+				'urban-green': 'hsl(var(--urban-green))',
+				'urban-blue': 'hsl(var(--urban-blue))',
+				'urban-dark': 'hsl(var(--urban-dark))',
+				'urban-light': 'hsl(var(--urban-light))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
