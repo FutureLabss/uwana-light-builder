@@ -17,57 +17,54 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+    <header className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur-md border-b border-border/20">
+      <div className="container mx-auto px-6">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">U</span>
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-heading font-black text-2xl">U</span>
             </div>
-            <div>
-              <h1 className="font-heading font-bold text-xl text-foreground">Uwana</h1>
-              <p className="text-xs text-muted-foreground">Be the light, lead the way</p>
-            </div>
+            <span className="font-heading font-black text-2xl text-foreground tracking-wide">UWANA</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-12">
             {navigationItems.map((item) => (
               <a
                 key={item.label}
                 href={item.url}
-                className="font-body text-foreground hover:text-primary transition-colors duration-200"
+                className="text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-sm"
               >
                 {item.label}
               </a>
             ))}
-          </div>
+          </nav>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Menu Button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-foreground">
+                <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent>
-              <div className="flex flex-col space-y-4 mt-8">
+            <SheetContent side="right" className="w-[300px] bg-background border-border/20">
+              <nav className="flex flex-col space-y-8 mt-12">
                 {navigationItems.map((item) => (
                   <a
                     key={item.label}
                     href={item.url}
-                    className="font-body text-lg text-foreground hover:text-primary transition-colors duration-200"
                     onClick={() => setIsOpen(false)}
+                    className="text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-lg border-b border-border/20 pb-4"
                   >
                     {item.label}
                   </a>
                 ))}
-              </div>
+              </nav>
             </SheetContent>
           </Sheet>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };

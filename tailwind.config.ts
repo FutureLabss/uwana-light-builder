@@ -134,9 +134,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				'urban-yellow': 'hsl(var(--urban-yellow))',
+				'urban-black': 'hsl(var(--urban-black))',
 				'urban-gold': 'hsl(var(--urban-gold))',
-				'urban-green': 'hsl(var(--urban-green))',
-				'urban-blue': 'hsl(var(--urban-blue))',
 				'urban-dark': 'hsl(var(--urban-dark))',
 				'urban-light': 'hsl(var(--urban-light))'
 			},

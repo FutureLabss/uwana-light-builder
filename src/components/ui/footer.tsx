@@ -17,18 +17,44 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-background border-t border-border/20 py-20">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-12">
+          {/* Logo and Description */}
+          <div className="md:col-span-2">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-12 h-12 bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-heading font-black text-2xl">U</span>
+              </div>
+              <span className="font-heading font-black text-2xl text-foreground tracking-wide">UWANA</span>
+            </div>
+            <p className="text-muted-foreground leading-relaxed mb-6 max-w-md text-lg">
+              Empowering Akwa-Ibom youth for a brighter future through innovation, 
+              leadership, and community transformation.
+            </p>
+            <div className="flex space-x-4">
+              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
+                <span className="text-primary group-hover:text-primary-foreground font-bold">f</span>
+              </div>
+              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
+                <span className="text-primary group-hover:text-primary-foreground font-bold">t</span>
+              </div>
+              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
+                <span className="text-primary group-hover:text-primary-foreground font-bold">i</span>
+              </div>
+            </div>
+          </div>
+
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-xl mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="font-heading font-black text-foreground mb-6 text-xl tracking-wide">QUICK LINKS</h3>
+            <div className="w-12 h-1 bg-primary mb-6" />
+            <ul className="space-y-4">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.url}
-                    className="font-body text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
+                  <a 
+                    href={link.url} 
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg font-medium uppercase tracking-wide"
                   >
                     {link.text}
                   </a>
@@ -39,58 +65,23 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-heading font-semibold text-xl mb-4">Contact</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span className="font-body text-secondary-foreground/80">
-                  Uyo, Akwa-Ibom, Nigeria
-                </span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary" />
-                <a 
-                  href="mailto:info@uwana.com.ng"
-                  className="font-body text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
-                >
-                  info@uwana.com.ng
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <span className="font-body text-secondary-foreground/80">
-                  08037890023
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <div>
-            <h3 className="font-heading font-semibold text-xl mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.url}
-                    aria-label={social.label}
-                    className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-primary-foreground hover:bg-primary-dark transition-colors duration-200"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </div>
+            <h3 className="font-heading font-black text-foreground mb-6 text-xl tracking-wide">CONTACT</h3>
+            <div className="w-12 h-1 bg-primary mb-6" />
+            <ul className="space-y-4">
+              <li className="text-muted-foreground text-lg">info@uwana.com.ng</li>
+              <li className="text-muted-foreground text-lg">08037890023</li>
+              <li className="text-muted-foreground text-lg">Akwa Ibom State, Nigeria</li>
+            </ul>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
-          <p className="font-body text-secondary-foreground/60">
-            © 2025 Uwana. Be the light, lead the way.
-          </p>
+        <div className="border-t border-border/20 mt-16 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-muted-foreground text-lg">
+              &copy; 2024 UWANA PROJECT. ALL RIGHTS RESERVED.
+            </p>
+            <div className="w-24 h-1 bg-primary mt-4 md:mt-0" />
+          </div>
         </div>
       </div>
     </footer>

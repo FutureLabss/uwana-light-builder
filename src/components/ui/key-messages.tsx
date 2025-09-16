@@ -1,73 +1,60 @@
 import { CheckCircle, Lightbulb, Users, Target, Zap } from "lucide-react";
 
-const messages = [
-  {
-    text: "Every youth can be a beacon of change.",
-    icon: Lightbulb,
-    color: "text-primary"
-  },
-  {
-    text: "Empower yourself, empower your community.",
-    icon: Users,
-    color: "text-secondary"
-  },
-  {
-    text: "Light the path to your future.",
-    icon: Target,
-    color: "text-accent"
-  },
-  {
-    text: "Together, we reduce unemployment through self-development and innovation.",
-    icon: Zap,
-    color: "text-primary"
-  }
-];
-
 export const KeyMessages = () => {
+  const messages = [
+    {
+      icon: Users,
+      title: "COMMUNITY FIRST",
+      description: "Building stronger communities through youth engagement and collaborative initiatives that create lasting impact.",
+    },
+    {
+      icon: Lightbulb,
+      title: "INNOVATION HUB",
+      description: "Fostering creativity and technological advancement to solve local challenges with global solutions.",
+    },
+    {
+      icon: Target,
+      title: "STRATEGIC FOCUS",
+      description: "Targeted programs that address the most pressing needs of Akwa Ibom youth across all sectors.",
+    }
+  ];
+
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-br from-background via-urban-light/10 to-background relative overflow-hidden">
-      {/* Geometric shapes */}
-      <div className="geometric-shape geometric-diamond top-16 right-24 animate-pulse-soft" />
-      <div className="geometric-shape geometric-circle bottom-16 left-16 animate-pulse-soft" style={{animationDelay: '1.5s'}} />
-      
+    <section className="py-32 bg-background relative">
       <div className="container mx-auto px-6">
-        <div className="section-header text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-secondary mb-6 animate-fade-in-up">
-            Our Core Values
+        <div className="text-center mb-20">
+          <h2 className="font-heading font-black text-5xl md:text-7xl text-foreground mb-8 tracking-tight">
+            OUR CORE
+            <span className="block text-primary">VALUES</span>
           </h2>
-          <p className="font-body text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-in-left">
-            The principles that drive our mission to transform Akwa Ibom youth into global changemakers
+          <div className="w-24 h-1 bg-primary mx-auto mb-8" />
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Guided by principles that drive meaningful change and sustainable growth.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-16">
-          {messages.map((message, index) => {
-            const IconComponent = message.icon;
-            return (
-              <div 
-                key={index}
-                className="group relative p-8 bg-gradient-card backdrop-blur-sm rounded-2xl shadow-urban hover:shadow-floating transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
-                style={{animationDelay: `${index * 0.2}s`}}
-              >
-                {/* Background gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-urban opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500" />
-                
-                <div className="relative flex items-start space-x-6">
-                  <div className={`p-4 rounded-xl bg-gradient-to-br from-white to-gray-50 shadow-soft group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className={`w-8 h-8 ${message.color} group-hover:animate-pulse`} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-body text-lg md:text-xl text-card-foreground leading-relaxed font-medium">
-                      {message.text}
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Accent line */}
-                <div className="absolute bottom-0 left-8 right-8 h-1 bg-gradient-urban rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+        <div className="grid md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+          {messages.map((message, index) => (
+            <div 
+              key={index}
+              className="bg-card border border-border/20 p-12 hover:border-primary/50 transition-all duration-500 hover:-translate-y-4 group relative overflow-hidden"
+            >
+              {/* Background accent */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+              
+              <div className="w-20 h-20 bg-primary/10 p-5 mb-8 group-hover:bg-primary/20 transition-colors duration-300">
+                <message.icon className="w-full h-full text-primary" />
               </div>
-            );
-          })}
+              
+              <h3 className="font-heading text-2xl font-black text-foreground mb-6 tracking-wide">
+                {message.title}
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                {message.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

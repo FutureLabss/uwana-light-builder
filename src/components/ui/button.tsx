@@ -9,16 +9,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-golden hover:shadow-urban hover:-translate-y-1",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 font-bold uppercase tracking-wider",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:-translate-y-1",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 transform hover:scale-105 transition-all duration-300",
         outline:
-          "border-2 border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-primary hover:-translate-y-1",
+          "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground transform hover:scale-105 transition-all duration-300 font-bold uppercase tracking-wider",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:-translate-y-1 shadow-soft",
-        ghost: "hover:bg-accent hover:text-accent-foreground hover:-translate-y-1",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 transform hover:scale-105 transition-all duration-300",
+        ghost: "hover:bg-accent hover:text-accent-foreground transform hover:scale-105 transition-all duration-300",
         link: "text-primary underline-offset-4 hover:underline",
-        urban: "bg-gradient-urban text-white hover:scale-105 shadow-urban font-bold",
+        urban: "bg-gradient-urban text-foreground hover:scale-105 font-bold uppercase tracking-wider",
       },
       size: {
         default: "h-12 px-6 py-3",

@@ -3,35 +3,32 @@ import heroImage from "@/assets/hero-light.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      
-      {/* Dynamic overlay */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Dark overlay background */}
       <div className="absolute inset-0 bg-gradient-hero" />
       
-      {/* Enhanced beacon effect */}
+      {/* Subtle yellow beacon effect */}
       <div className="absolute inset-0 bg-gradient-beacon animate-pulse-soft" />
       
-      {/* Urban geometric elements */}
-      <div className="geometric-shape geometric-diamond top-20 right-32 animate-pulse-soft" />
-      <div className="geometric-shape geometric-circle bottom-32 left-20 animate-pulse-soft" style={{animationDelay: '1s'}} />
-      <div className="geometric-shape geometric-triangle top-1/3 right-16 animate-pulse-soft" style={{animationDelay: '2s'}} />
+      {/* Geometric elements with yellow accents */}
+      <div className="absolute top-20 right-32 w-24 h-24 border-2 border-primary/30 rotate-45 animate-pulse-soft" />
+      <div className="absolute bottom-32 left-20 w-16 h-16 bg-primary/20 rounded-full animate-pulse-soft" style={{animationDelay: '1s'}} />
+      <div className="absolute top-1/3 right-16 w-0 h-0 border-l-[30px] border-r-[30px] border-b-[50px] border-l-transparent border-r-transparent border-b-primary/30 animate-pulse-soft" style={{animationDelay: '2s'}} />
       
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white">
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
-          <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight tracking-tight">
-            Be the light,{" "}
-            <span className="text-primary-light bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent animate-pulse-soft">
-              lead the way.
+          <h1 className="font-heading font-black text-6xl md:text-8xl lg:text-9xl mb-8 leading-none tracking-tighter text-foreground">
+            BE THE{" "}
+            <span className="text-primary block text-7xl md:text-9xl lg:text-[10rem]">
+              LIGHT
+            </span>
+            <span className="text-foreground/80 text-4xl md:text-6xl lg:text-7xl font-light tracking-wide">
+              LEAD THE WAY
             </span>
           </h1>
           
-          <p className="font-body text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto leading-relaxed opacity-95 animate-slide-in-left">
+          <p className="font-body text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-muted-foreground animate-slide-in-left">
             Empowering Akwa-Ibom youth for a brighter future through innovation, 
             leadership, and community transformation.
           </p>
@@ -39,23 +36,23 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-in-right">
             <Button 
               size="lg" 
-              className="cta-button font-body font-bold px-10 py-4 text-lg rounded-xl min-w-[200px] transform hover:scale-105 transition-all duration-300"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-12 py-6 text-xl rounded-none uppercase tracking-wider transform hover:scale-105 transition-all duration-300 min-w-[250px]"
             >
               Join the Movement
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white/40 text-white hover:bg-white/10 hover:border-white font-body font-bold px-10 py-4 text-lg rounded-xl min-w-[200px] backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-12 py-6 text-xl rounded-none uppercase tracking-wider min-w-[250px] transition-all duration-300 hover:scale-105"
             >
               Support Us
             </Button>
           </div>
         </div>
 
-        {/* Urban accent */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-1 h-16 bg-gradient-to-b from-primary to-transparent rounded-full animate-pulse" />
+        {/* Bottom accent */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+          <div className="w-1 h-20 bg-gradient-to-b from-primary to-transparent animate-pulse" />
         </div>
       </div>
     </section>

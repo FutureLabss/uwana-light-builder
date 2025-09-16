@@ -8,56 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Uwana Brand Colors - Updated Design System */
-    --background: 0 0% 100%;
-    --foreground: 213 16% 13%;
+    /* Uwana Brand Colors - Yellow & Black Theme */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 213 16% 13%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 213 16% 13%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Primary: Gold #FFD700 */
+    /* Primary: Bright Yellow #FFD700 */
     --primary: 51 100% 50%;
-    --primary-foreground: 213 16% 13%;
-    --primary-light: 51 100% 70%;
-    --primary-dark: 45 100% 35%;
+    --primary-foreground: 0 0% 8%;
+    --primary-light: 51 100% 60%;
+    --primary-dark: 45 100% 40%;
 
-    /* Secondary: Dark Green #006400 */
-    --secondary: 120 100% 20%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-light: 120 50% 30%;
+    /* Secondary: Pure Black */
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 95%;
+    --secondary-light: 0 0% 15%;
 
-    /* Accent: Blue #1E90FF */
-    --accent: 210 100% 56%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 210 80% 70%;
+    /* Accent: Golden Yellow */
+    --accent: 48 100% 67%;
+    --accent-foreground: 0 0% 8%;
+    --accent-light: 50 100% 80%;
 
-    /* Text Secondary: #444F6E */
-    --muted: 210 40% 96%;
-    --muted-foreground: 221 24% 34%;
+    /* Muted for dark theme */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
     --ring: 51 100% 50%;
 
     /* Urban styling variables */
-    --urban-gold: 51 100% 50%;
-    --urban-green: 120 100% 20%;
-    --urban-blue: 210 100% 56%;
-    --urban-dark: 210 15% 15%;
-    --urban-light: 210 20% 95%;
+    --urban-yellow: 51 100% 50%;
+    --urban-black: 0 0% 8%;
+    --urban-gold: 48 100% 67%;
+    --urban-dark: 0 0% 5%;
+    --urban-light: 0 0% 95%;
 
-    /* Enhanced dynamic gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(51 100% 50%) 0%, hsl(51 100% 70%) 30%, hsl(210 100% 56%) 100%);
-    --gradient-hero: linear-gradient(135deg, rgba(0, 100, 0, 0.9) 0%, rgba(30, 144, 255, 0.7) 60%, rgba(255, 215, 0, 0.3) 100%);
-    --gradient-beacon: radial-gradient(circle at 30% 40%, rgba(255, 215, 0, 0.4) 0%, rgba(30, 144, 255, 0.2) 30%, transparent 70%);
-    --gradient-urban: linear-gradient(45deg, hsl(51 100% 50%) 0%, hsl(120 100% 20%) 50%, hsl(210 100% 56%) 100%);
-    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+    /* Enhanced dark gradients with yellow accents */
+    --gradient-primary: linear-gradient(135deg, hsl(51 100% 50%) 0%, hsl(48 100% 67%) 50%, hsl(45 100% 40%) 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.8) 50%, rgba(255, 215, 0, 0.1) 100%);
+    --gradient-beacon: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 30%, transparent 70%);
+    --gradient-urban: linear-gradient(45deg, hsl(51 100% 50%) 0%, hsl(48 100% 67%) 50%, hsl(0 0% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.9) 100%);
     
     /* Enhanced shadows for depth */
     --shadow-soft: 0 4px 20px -6px rgba(0, 0, 0, 0.1), 0 10px 30px -4px rgba(0, 0, 0, 0.05);
@@ -79,46 +79,47 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    /* Dark mode uses same colors since we're now dark by default */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 51 100% 50%;
-    --primary-foreground: 213 16% 13%;
+    --primary: 51 100% 55%;
+    --primary-foreground: 0 0% 8%;
     --primary-light: 51 100% 70%;
     --primary-dark: 45 100% 35%;
 
-    --secondary: 120 100% 25%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-light: 120 50% 35%;
+    --secondary: 0 0% 5%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 0 0% 12%;
 
-    --accent: 210 100% 56%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 210 80% 70%;
+    --accent: 48 100% 70%;
+    --accent-foreground: 0 0% 8%;
+    --accent-light: 50 100% 85%;
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 221 24% 55%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 75%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 51 100% 50%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 51 100% 55%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 51 100% 50%;
   }
 }
 
