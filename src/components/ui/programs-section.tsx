@@ -23,7 +23,7 @@ export const ProgramsSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-muted/5 relative">
+    <section className="py-28 bg-muted/5 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="font-heading font-black text-5xl md:text-7xl text-foreground mb-8 tracking-tight">
@@ -40,7 +40,7 @@ export const ProgramsSection = () => {
           {programs.map((program, index) => (
             <div 
               key={index}
-              className="bg-card border border-border/20 overflow-hidden hover:border-primary/50 transition-all duration-500 hover:-translate-y-4 group relative"
+              className="bg-card border border-border/20 overflow-hidden rounded-sm hover:border-primary/50 transition-all duration-500 hover:-translate-y-4 group relative"
             >
               {/* Image Section */}
               <div className="relative overflow-hidden h-80">
@@ -49,8 +49,8 @@ export const ProgramsSection = () => {
                   alt={program.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                <div className="absolute top-4 left-4 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                <div className="absolute top-4 left-4 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" /> */}
               </div>
               
               <div className="p-8">

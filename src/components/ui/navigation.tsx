@@ -21,11 +21,10 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-black text-2xl">U</span>
+          <div className="flex items-center gap-4">
+            <div className="rounded w-[7rem] h-[60px] flex items-center justify-center">
+              <img src="\uwanaLogo.png" alt="Uwana Logo"/>
             </div>
-            <span className="font-heading font-black text-2xl text-foreground tracking-wide">UWANA</span>
           </div>
 
           {/* Desktop Navigation */}

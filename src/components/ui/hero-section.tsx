@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-light.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="mt-5 relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Dark overlay background */}
       <div className="absolute inset-0 bg-gradient-hero" />
       
@@ -18,12 +18,12 @@ export const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
-          <h1 className="font-heading font-black text-6xl md:text-8xl lg:text-9xl mb-8 leading-none tracking-tighter text-foreground">
+          <h1 className=" font-heading font-black text-6xl md:text-8xl lg:text-8xl mb-8 leading-none tracking-tighter text-foreground">
             BE THE{" "}
-            <span className="text-primary block text-7xl md:text-9xl lg:text-[10rem]">
+            <span className="text-primary block text-7xl md:text-9xl lg:text-[rem]">
               LIGHT
             </span>
-            <span className="text-foreground/80 text-4xl md:text-6xl lg:text-7xl font-light tracking-wide">
+            <span className="text-foreground/80 text-4xl md:text-6xl lg:text-6xl font-light tracking-wide border-white">
               LEAD THE WAY
             </span>
           </h1>
@@ -36,14 +36,14 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-in-right">
             <Button 
               size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-12 py-6 text-xl rounded-none uppercase tracking-wider transform hover:scale-105 transition-all duration-300 min-w-[250px]"
+              className="bg-primary text-primary-foreground font-extrabold  border-primary px-12 py-7  text-xl rounded uppercase tracking-wider transform hover:scale-105 transition-all duration-300 min-w-[250px]"
             >
               Join the Movement
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-12 py-6 text-xl rounded-none uppercase tracking-wider min-w-[250px] transition-all duration-300 hover:scale-105"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-extrabold px-12 py-7  text-xl rounded uppercase tracking-wider min-w-[250px] transition-all duration-300 hover:scale-105"
             >
               Support Us
             </Button>

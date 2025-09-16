@@ -97,7 +97,7 @@ export const SpotlightStories = () => {
       
       <div className="container mx-auto px-4">
         <div className="section-header text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-secondary mb-4">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary mb-4">
             Youth Spotlight Stories
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -114,14 +114,14 @@ export const SpotlightStories = () => {
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <div className="mb-6">
                     <Quote className="w-12 h-12 text-primary mb-4 opacity-60" />
-                    <h3 className="font-heading font-bold text-2xl md:text-3xl text-secondary mb-2">
+                    <h3 className="font-heading font-bold text-2xl md:text-3xl text-primary mb-2">
                       {story.name}
                     </h3>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                         {story.age} years old
                       </span>
-                      <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium">
+                      <span className="px-3 py-1 bg-secondary/10 text-white rounded-full text-sm font-medium">
                         {story.profession}
                       </span>
                     </div>
@@ -160,10 +160,10 @@ export const SpotlightStories = () => {
               variant="outline"
               size="lg"
               onClick={prevStory}
-              className="cta-button border-primary/20 hover:border-primary hover:bg-primary/10"
+              className="cta-button text-secondary font-[700] border-primary/20 hover:border-primary hover:bg-primary/10"
               aria-label="Previous story"
             >
-              <ChevronLeft className="w-5 h-5 mr-2" />
+              <ChevronLeft className="w-5 h-5 mr-2 text-secondary" />
               Previous
             </Button>
 
@@ -187,11 +187,11 @@ export const SpotlightStories = () => {
               variant="outline"
               size="lg"
               onClick={nextStory}
-              className="cta-button border-primary/20 hover:border-primary hover:bg-primary/10"
+              className="cta-button text-secondary font-[700] border-primary/20 hover:border-primary hover:bg-primary/10"
               aria-label="Next story"
             >
               Next
-              <ChevronRight className="w-5 h-5 ml-2" />
+              <ChevronRight className="w-5 h-5 ml-2 text-secondary" />
             </Button>
           </div>
 

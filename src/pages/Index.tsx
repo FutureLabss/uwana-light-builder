@@ -17,15 +17,15 @@ const Index = () => {
       <KeyMessages />
       
       {/* Section divider */}
-      <div className="section-divider" />
+      {/* <div className="section-divider" /> */}
       
       <SpotlightStories />
       
       {/* Section divider */}
-      <div className="section-divider" />
+      {/* <div className="section-divider" /> */}
       
       <ProgramsSection />
-      
+
       <Footer />
     </div>
   );

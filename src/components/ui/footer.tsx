@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const quickLinks = [
   { text: "About", url: "/about" },
@@ -13,35 +13,41 @@ const socialLinks = [
   { icon: Facebook, url: "https://facebook.com/uwanang", label: "Facebook" },
   { icon: Instagram, url: "https://instagram.com/uwanang", label: "Instagram" },
   { icon: Twitter, url: "https://twitter.com/uwanang", label: "Twitter" },
+  { icon: Linkedin, url: "https://linkedin.com/company/uwana", label: "LinkedIn" },
 ];
 
 export const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border/20 py-20">
+    <footer className="bg-background border-t border-border/20  pt-10 pb-20">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-12 h-12 bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-black text-2xl">U</span>
+              <div className="rounded w-[7rem] h-[60px] flex items-center justify-center">
+                <img src="\uwanaLogo.png" alt="Uwana Logo" />
               </div>
-              <span className="font-heading font-black text-2xl text-foreground tracking-wide">UWANA</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md text-lg">
-              Empowering Akwa-Ibom youth for a brighter future through innovation, 
+              Empowering Akwa-Ibom youth for a brighter future through innovation,
               leadership, and community transformation.
             </p>
             <div className="flex space-x-4">
-              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
-                <span className="text-primary group-hover:text-primary-foreground font-bold">f</span>
-              </div>
-              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
-                <span className="text-primary group-hover:text-primary-foreground font-bold">t</span>
-              </div>
-              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer group">
-                <span className="text-primary group-hover:text-primary-foreground font-bold">i</span>
-              </div>
+              {socialLinks.map(({ icon: Icon, url, label }, idx) => (
+                <a
+                  key={label}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary transition-all duration-300 cursor-pointer group rounded-full"
+                >
+                  <Icon
+                    size={28}
+                    className="transition-colors duration-300 text-[#edcf0c] group-hover:text-gray-900"
+                  />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -52,8 +58,8 @@ export const Footer = () => {
             <ul className="space-y-4">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.url} 
+                  <a
+                    href={link.url}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg font-medium uppercase tracking-wide"
                   >
                     {link.text}

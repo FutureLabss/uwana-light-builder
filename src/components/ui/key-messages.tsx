@@ -37,7 +37,7 @@ export const KeyMessages = () => {
           {messages.map((message, index) => (
             <div 
               key={index}
-              className="bg-card border border-border/20 p-12 hover:border-primary/50 transition-all duration-500 hover:-translate-y-4 group relative overflow-hidden"
+              className="bg-card border border-border/20 p-12 rounded hover:border-primary/50 transition-all duration-500 hover:-translate-y-4 group relative overflow-hidden"
             >
               {/* Background accent */}
               <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
