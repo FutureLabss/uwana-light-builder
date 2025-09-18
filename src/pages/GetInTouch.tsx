@@ -10,6 +10,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const GetInTouch = () => {
   return (
     <div className="min-h-screen bg-background">
+      <div id="get-in-touch-marker" style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0 }} />
       <Navigation />
       
       <main className="py-16 md:py-24">

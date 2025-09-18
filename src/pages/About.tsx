@@ -7,6 +7,7 @@ import missionImage from "@/assets/mission-leadership.jpg";
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <div id="about-marker" style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0 }} />
       <Navigation />
       
       <main className="py-16 md:py-24">
@@ -33,7 +34,7 @@ const About = () => {
                     aims to amplify the voices of Akwa Ibom youths in all spheres of life, from a point-of-sale 
                     attendant in a rural village to an Akwa Ibomite professional in the United States.
                   </p>
-                  <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
+                  {/* <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                     By capturing and sharing their stories, achievements, and aspirations, Uwana will bring much-needed 
                     visibility to their talents and challenges. This project is rooted in the belief that the voices 
                     and creativity of Akwa Ibom's youth are powerful catalysts for change when given a platform.
@@ -42,7 +43,7 @@ const About = () => {
                     Many youths in the state are hardworking, educated, and ambitious, yet have been held back by 
                     insufficient government support, high poverty and unemployment, and limited opportunities to be heard. 
                     Uwana seeks to fill this gap as a bright beacon connecting these youths to the world.
-                  </p>
+                  </p> */}
                 </div>
                 <div className="order-first md:order-last">
                   <img 

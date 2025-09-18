@@ -9,6 +9,7 @@ import documentaryImage from "@/assets/ndise-documentary.jpg";
 const IbomYouth2040 = () => {
   return (
     <div className="min-h-screen bg-background">
+      <div id="ibom-youth-2040-marker" style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0 }} />
       <Navigation />
       
       <main className="py-16 md:py-24">
@@ -40,30 +41,14 @@ const IbomYouth2040 = () => {
                         economic growth and human capital development, specifically designed to harness the potential 
                         of the state's vibrant youth population.
                       </p>
-                      <p className="font-body text-muted-foreground leading-relaxed">
-                        With individuals under the age of 35 constituting over 62% of Akwa Ibom's 7.2 million residents 
-                        (NBS, 2023), this policy is both timely and transformative. It presents a strategic roadmap that 
-                        identifies high-impact investment opportunities across ten priority sectors: agriculture, marine 
-                        and fisheries, entrepreneurship, technology and innovation, health, education, tourism, sports, 
-                        and the creative economy.
-                      </p>
-                      <p className="font-body text-muted-foreground leading-relaxed">
-                        This is not merely a policy—it is a bold, youth-led initiative that aligns state development with 
-                        emerging global economic trends while leveraging Akwa Ibom's unique demographic advantage and sectoral 
-                        strengths. By actively positioning under-30 indigenous youth as sectoral leaders and policy actors, 
-                        the framework embraces a bottom-up, evidence-based, and investor-aligned approach to sustainable development.
-                      </p>
-                      <p className="font-body text-muted-foreground leading-relaxed">
-                        The overarching vision is to transform Akwa Ibom into Nigeria's foremost youth-powered economy by 2040, 
-                        underpinned by local ingenuity, digital transformation, and strategic public-private partnerships. To 
-                        achieve this, the policy articulates actionable strategies, presents sector-specific data, outlines 
-                        investor incentives, and proposes structural reforms necessary to build a resilient, inclusive, and 
-                        competitive sub-national economy.
-                      </p>
-                      <Button className="flex items-center gap-2">
+                      <a
+                        href="/akwa-ibom-youth-policy.pdf"
+                        download
+                        className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-primary text-primary-foreground rounded shadow hover:bg-primary/80 transition-colors"
+                      >
                         <Download className="h-4 w-4" />
                         Download Policy Document
-                      </Button>
+                      </a>
                     </CardContent>
                   </Card>
                 </div>

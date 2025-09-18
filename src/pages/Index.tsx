@@ -8,24 +8,18 @@ import { Footer } from "@/components/ui/footer";
 const Index = () => {
   return (
     <div className="min-h-screen font-body">
+      <div id="home-marker" style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0 }} />
       <Navigation />
       <HeroSection />
-      
       {/* Section divider */}
       <div className="section-divider" />
-      
       <KeyMessages />
-      
       {/* Section divider */}
       {/* <div className="section-divider" /> */}
-      
       <SpotlightStories />
-      
       {/* Section divider */}
       {/* <div className="section-divider" /> */}
-      
       <ProgramsSection />
-
       <Footer />
     </div>
   );

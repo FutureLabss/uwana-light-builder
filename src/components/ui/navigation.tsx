@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -15,6 +16,7 @@ const navigationItems = [
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur-md border-b border-border/20">
@@ -29,15 +31,22 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-12">
-            {navigationItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.url}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-sm"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navigationItems.map((item) => {
+              const isActive = location.pathname === item.url;
+              return (
+                <a
+                  key={item.label}
+                  href={item.url}
+                  className={
+                    `text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-sm ` +
+                    (isActive ? 'bg-primary/20 text-primary rounded px-3 py-2 shadow-md' : '')
+                  }
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -49,16 +58,23 @@ export const Navigation = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-background border-border/20">
               <nav className="flex flex-col space-y-8 mt-12">
-                {navigationItems.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.url}
-                    onClick={() => setIsOpen(false)}
-                    className="text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-lg border-b border-border/20 pb-4"
-                  >
-                    {item.label}
-                  </a>
-                ))}
+                {navigationItems.map((item) => {
+                  const isActive = location.pathname === item.url;
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.url}
+                      onClick={() => setIsOpen(false)}
+                      className={
+                        `text-foreground hover:text-primary transition-colors duration-300 font-body font-bold uppercase tracking-wider text-lg border-b border-border/20 pb-4 ` +
+                        (isActive ? 'bg-primary/20 text-primary rounded px-3 py-2 shadow-md' : '')
+                      }
+                      aria-current={isActive ? 'page' : undefined}
+                    >
+                      {item.label}
+                    </a>
+                  );
+                })}
               </nav>
             </SheetContent>
           </Sheet>

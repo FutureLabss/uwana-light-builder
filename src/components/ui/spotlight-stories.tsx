@@ -23,7 +23,7 @@ const stories: Story[] = [
     profession: "Tech Entrepreneur",
     story: "From selling phone accessories in Ibom Plaza to founding a fintech startup that serves over 10,000 users across Nigeria.",
     achievement: "Built a mobile payment solution that increased financial inclusion in rural Akwa Ibom by 40%",
-    image: "/api/placeholder/300/300"
+    image: "\EmemUdoh.png"
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const stories: Story[] = [
     profession: "Renewable Energy Engineer",
     story: "A village boy who went from fetching water in jerry cans to designing solar power systems for communities across three continents.",
     achievement: "Pioneered affordable solar solutions that brought electricity to 50+ rural communities in Nigeria",
-    image: "/api/placeholder/300/300"
+    image: "/DanielAkpan.png"
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const stories: Story[] = [
     profession: "Creative Artist & Social Entrepreneur",
     story: "Transformed traditional Ibibio art into contemporary fashion, creating employment for 200+ local artisans.",
     achievement: "Her fashion brand showcased at New York Fashion Week, putting Akwa Ibom creativity on the global map",
-    image: "/api/placeholder/300/300"
+    image: "/GraceEssien.png"
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const stories: Story[] = [
     profession: "Marine Biologist & Aquaculture Specialist",
     story: "From a fishing family to revolutionizing sustainable fish farming, training over 500 young farmers in modern aquaculture.",
     achievement: "Developed climate-resilient fish farming techniques that increased local fish production by 300%",
-    image: "/api/placeholder/300/300"
+    image: "/SamuelObot.png"
   }
 ];
 
